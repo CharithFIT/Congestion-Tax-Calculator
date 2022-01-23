@@ -88,8 +88,3 @@ A single charge rule applies in Gothenburg. Under this rule, a vehicle that pass
 Just as you finished coding, your manager shows up and tells you that the same application should be used in other cities with different tax rules. These tax rules need to be handled as content outside the application because different content editors for different cities will be in charge of keeping the parameters up to date.
 
 Move the parameters used by the application to an outside data store of your own choice to be read during runtime by the application.
-
-## Further questions
-
-As you take on the assignment you will undoubtedly have questions. Please write these questions down in a file named `questions.md` and submit that along with your solution. Although we cannot answer them in order for you to complete the assignment, they will be helpful
-in evaluating your solution.
