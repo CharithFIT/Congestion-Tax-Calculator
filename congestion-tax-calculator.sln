@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CongestionTaxCalculator.Web", "CongestionTaxCalculator.Web\CongestionTaxCalculator.Web.csproj", "{1977A7A4-8A6A-42E3-B4D3-CF7751605948}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CongestionTaxCalculator.Repository", "CongestionTaxCalculator.Repository\CongestionTaxCalculator.Repository.csproj", "{7FD19B20-79DD-4859-97AA-B88C1CDE1FCF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CongestionTaxCalculator.Service", "CongestionTaxCalculator.Service\CongestionTaxCalculator.Service.csproj", "{A0B1EF69-F2EA-45AA-AFB8-2C63E6FE22CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1977A7A4-8A6A-42E3-B4D3-CF7751605948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1977A7A4-8A6A-42E3-B4D3-CF7751605948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1977A7A4-8A6A-42E3-B4D3-CF7751605948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1977A7A4-8A6A-42E3-B4D3-CF7751605948}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD19B20-79DD-4859-97AA-B88C1CDE1FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD19B20-79DD-4859-97AA-B88C1CDE1FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD19B20-79DD-4859-97AA-B88C1CDE1FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD19B20-79DD-4859-97AA-B88C1CDE1FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0B1EF69-F2EA-45AA-AFB8-2C63E6FE22CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0B1EF69-F2EA-45AA-AFB8-2C63E6FE22CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0B1EF69-F2EA-45AA-AFB8-2C63E6FE22CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0B1EF69-F2EA-45AA-AFB8-2C63E6FE22CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A98A269E-D5F9-4C9A-90DA-0C6EAC1931A9}
+	EndGlobalSection
+EndGlobal
