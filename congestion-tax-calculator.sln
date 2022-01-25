@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CongestionTaxCalculator.Rep
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CongestionTaxCalculator.Service", "CongestionTaxCalculator.Service\CongestionTaxCalculator.Service.csproj", "{A0B1EF69-F2EA-45AA-AFB8-2C63E6FE22CC}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{2EBF7858-1641-4726-BEDA-1B1A2DF9F6AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A0B1EF69-F2EA-45AA-AFB8-2C63E6FE22CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0B1EF69-F2EA-45AA-AFB8-2C63E6FE22CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0B1EF69-F2EA-45AA-AFB8-2C63E6FE22CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EBF7858-1641-4726-BEDA-1B1A2DF9F6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EBF7858-1641-4726-BEDA-1B1A2DF9F6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EBF7858-1641-4726-BEDA-1B1A2DF9F6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EBF7858-1641-4726-BEDA-1B1A2DF9F6AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

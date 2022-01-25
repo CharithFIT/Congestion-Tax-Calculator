@@ -1,5 +1,13 @@
 # Congestion Tax Calculator
 
+## Run Application 
+
+move to project folder
+
+run docker command
+
+docker-compose -f docker-compose.yml -f docker-compose.override.yml up
+
 ## The Scenario
 
 Your colleague started working on an application for calculating congestion tax fees for vehicles within the Gothenburg area. Unfortunately, said colleague has gone on parental leave and left the half-finished project to you. While there are no syntax errors in the attached code, there seem to be bugs in the calculation, and there is no entry point to the project, only a class library that currently isn't called from anywhere.

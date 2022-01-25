@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  congestiontaxcalculator.web:
+    image: ${DOCKER_REGISTRY-}congestiontaxcalculatorweb
+    build:
+      context: .
+      dockerfile: Dockerfile
+
