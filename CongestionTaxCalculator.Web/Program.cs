@@ -49,7 +49,8 @@ app.Run();
 static void ConfigureProject(WebApplicationBuilder builder)
 {
     builder.Services
-        .InstallService(builder.Configuration)
+        .InstallRepositories(builder.Configuration)
+        .InstallServices(builder.Configuration)
         .AddMemoryCache();
 };
 

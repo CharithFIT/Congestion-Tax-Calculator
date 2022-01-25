@@ -6,10 +6,10 @@ namespace CongestionTaxCalculator.Repository
 {
     public static class RepositoryInstaller
     {
-        public static IServiceCollection InstallRepository(this IServiceCollection services, IConfiguration config)
+        public static IServiceCollection InstallRepositories(this IServiceCollection services, IConfiguration config)
         {
-            services.AddConfig(config)
-                .InstallLookupRepositories(config);
+            services.AddDbConfiguration(config)
+                .InstallLookupRepository(config);
 
             return services;
         }

@@ -5,7 +5,7 @@ namespace CongestionTaxCalculator.Service.Configuration
 {
     public static class ServiceConfiguration
     {
-        public static IServiceCollection AddServiceConfig(this IServiceCollection services, IConfiguration config)
+        public static IServiceCollection AddServiceConfiguration(this IServiceCollection services, IConfiguration config)
         {
             services.Configure<SingleChargeRuleConfiguration>(config.GetSection("SingleChargeRule"));
             services.Configure<CongestionTaxRuleConfiguration>(config.GetSection("CongestionTaxRule"));

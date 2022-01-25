@@ -5,7 +5,7 @@ namespace CongestionTaxCalculator.Repository.Lookup
 {
     public static class LookupRepositoryInstaller
     {
-        public static IServiceCollection InstallLookupRepositories(this IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config)
+        public static IServiceCollection InstallLookupRepository(this IServiceCollection services, Microsoft.Extensions.Configuration.IConfiguration config)
         {
             services.AddTransient<ILookupRepository, LookupRepository>();
      
