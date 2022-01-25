@@ -2,21 +2,19 @@
 using CongestionTaxCalculator.Repository;
 using CongestionTaxCalculator.Service;
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
+WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
 builder.Services.AddSwaggerGen();
 
-builder.Services
-    .InstallService(builder.Configuration)
-    .AddMemoryCache();
+ConfigureProject(builder);
 
 var app = builder.Build();
-
+app.UseSwagger();
+app.UseSwaggerUI();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -35,8 +33,6 @@ if (app.Environment.IsDevelopment())
             logger.LogError(ex, "An error occurred creating the DB.");
         }
     }
-    app.UseSwagger();
-    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
@@ -46,3 +42,12 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+static void ConfigureProject(WebApplicationBuilder builder)
+{
+    builder.Services
+        .InstallService(builder.Configuration)
+        .AddMemoryCache();
+};
+
+
