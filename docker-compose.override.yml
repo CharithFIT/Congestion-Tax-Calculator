@@ -18,3 +18,9 @@ services:
     environment:
     - ACCEPT_EULA=Y
     - SA_PASSWORD=Data123@22
+    volumes:
+    - sql-data:/var/opt/mssql
+volumes:
+     sql-data:
+      driver: local
+  

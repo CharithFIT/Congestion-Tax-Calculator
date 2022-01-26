@@ -1,12 +1,33 @@
 # Congestion Tax Calculator
 
 ## Run Application 
+open powershell
 
 move to project folder
 
-run docker command
+```
+cd C:\Git\Congestion-Tax-Calculator
+
+```
+
+run docker-compose
+
+```
 
 docker-compose -f docker-compose.yml -f docker-compose.override.yml up
+
+```
+
+if you are running application for firsttime
+
+run following command in package manager console in Visual studio and make sure set repository project as a default project
+
+```
+
+Update-Database -StartupProject CongestionTaxCalculator.Web
+
+```
+
 
 ## The Scenario
 
