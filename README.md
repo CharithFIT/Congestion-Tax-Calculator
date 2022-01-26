@@ -18,9 +18,9 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml up
 
 ```
 
-if you are running application for firsttime
+if you are running application for first time
 
-run following command in package manager console in Visual studio and make sure set repository project as a default project
+run following command in package manager console of Visual studio and make sure set repository project as the default project
 
 ```
 
