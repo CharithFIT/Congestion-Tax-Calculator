@@ -28,7 +28,8 @@ namespace CongestionTaxCalculator.Repository
                 new CongestionTax { Id = 8, StartTime = new TimeSpan(15, 30, 00), EndTime = new TimeSpan(16, 59, 00), Amount = 18 },
                 new CongestionTax { Id = 9, StartTime = new TimeSpan(17, 00, 00), EndTime = new TimeSpan(17, 59, 00), Amount = 13 },
                 new CongestionTax { Id = 10, StartTime = new TimeSpan(18, 00, 00), EndTime = new TimeSpan(18, 29, 00), Amount = 8 },
-                new CongestionTax { Id = 11, StartTime = new TimeSpan(18, 30, 00), EndTime = new TimeSpan(05, 59, 00), Amount = 0 }
+                new CongestionTax { Id = 12, StartTime = new TimeSpan(18, 30, 00), EndTime = new TimeSpan(23, 59, 00), Amount = 0 },
+                new CongestionTax { Id = 13, StartTime = new TimeSpan(00, 00, 00), EndTime = new TimeSpan(05, 59, 00), Amount = 0 }
                 );
 
             modelBuilder.Entity<TaxExemptVehicle>().HasData(

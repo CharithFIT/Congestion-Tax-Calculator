@@ -128,14 +128,10 @@ namespace CongestionTaxCalculator.Service.Service
         }
 
         private async Task<bool> IsTollFreeDate(DateTime date, CancellationToken cancellationToken)
-        {
-            int year = date.Year;
-            int month = date.Month;
-            int day = date.Day;
-
+        {          
             List<TaxExceptDate> exceptDates = await this.lookupService.GetTaxExceptDatesAsync(cancellationToken);
 
-            return exceptDates.Any(d => d.Date.Year == year && d.Date.Month == month && date.Day == day);
+            return exceptDates.Any(d => d.Date == date.Date);
         }
     }
 }
