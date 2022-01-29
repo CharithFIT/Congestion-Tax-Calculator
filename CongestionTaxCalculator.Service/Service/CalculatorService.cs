@@ -123,8 +123,9 @@ namespace CongestionTaxCalculator.Service.Service
             TimeSpan timeSpan = new TimeSpan(date.Hour, date.Minute, 0);
 
             List<CongestionTax> congetionTaxes = await this.lookupService.GetCongestionTaxesAsync(cancellationToken);
-
-            return congetionTaxes.First(t => t.StartTime <= timeSpan && t.EndTime >= timeSpan).Amount;
+                        
+            return congetionTaxes.First(t => t.StartTime < t.EndTime ? t.StartTime <= timeSpan && t.EndTime >= timeSpan 
+            : t.EndTime >= timeSpan && t.StartTime >=timeSpan).Amount;
         }
 
         private async Task<bool> IsTollFreeDate(DateTime date, CancellationToken cancellationToken)
